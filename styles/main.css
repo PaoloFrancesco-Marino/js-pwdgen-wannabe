@@ -34,9 +34,31 @@ body {
     margin-bottom: 20px;
 }
 
+.box-text {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+}
+
 .jumbotron h1 {
-    color: #e53e38;
-    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    color: #e53e38;  
+    animation: rotate linear .1s;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-100%, 0%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, 0%);
+        opacity: 1;
+    }
 }
 
 .jumbotron p {
@@ -103,6 +125,7 @@ body {
     width: 80px;
     margin-right: 20px;
 }
+
 
 .box-number span {
     line-height: 50px;
