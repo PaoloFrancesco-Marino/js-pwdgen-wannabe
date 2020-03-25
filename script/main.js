@@ -21,12 +21,12 @@ var color = prompt('Colore Preferito?');
 console.log(color);
 
 
-// 3.1 - aggiunta numero finale
+// 3.1 - aggiunta età
 
-var number = 20;
+var age = prompt('La tua età?');
 
-console.log(number)
+console.log(age)
 
 // 4-scrivere nella pagina le informazioni ottenute 
 
-document.getElementById('result') .innerHTML = name + surname + color + number;
+document.getElementById('result') .innerHTML = name + surname + color + age;
