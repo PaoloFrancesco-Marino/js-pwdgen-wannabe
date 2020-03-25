@@ -27,6 +27,17 @@ var age = prompt('La tua età?');
 
 console.log(age)
 
+// calcolo anno di nascità
+
+var date = new Date();
+var years = date.getFullYear();
+
+console.log(years)
+
+var result = years - parseInt(age);
+
+console.log(result)
+
 // 4-scrivere nella pagina le informazioni ottenute 
 
-document.getElementById('result') .innerHTML = name + surname + color + age;
+document.getElementById('result') .innerHTML = name + surname + color + age + result;
